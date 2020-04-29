@@ -9,7 +9,7 @@ gem 'rails', '= 5.2.0'
 
 # Use PostgreSQL for the backend
 gem 'pg'
-
+gem 'railties'
 # Instance/Course settings
 gem 'settings_on_rails'
 # Manage read/unread status
@@ -77,12 +77,16 @@ gem 'kaminari'
 # Work with Docker
 gem 'docker-api'
 
+
 group :development do
   # Spring speeds up development by keeping your application running in the background.
   # Read more: https://github.com/rails/spring
   gem 'spring', platforms: [:ruby]
   gem 'listen', '~> 3.2.0'
 
+  gem 'faker'
+  gem 'hirb'
+  gem 'better_errors'
   # Gems to make development mode faster and less painful
   gem 'rails-flog', require: 'flog'
   gem 'wdm', '>= 0.0.3', platforms: [:mswin, :mswin64]
